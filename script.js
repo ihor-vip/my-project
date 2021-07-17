@@ -1,8 +1,8 @@
 // - створити функцію яка приймає масив та виводить його
 
- /* let arrays = [1,2,true];
+ /* let array = [1,2,true];
 function array(){
-    console.log(arrays);
+    console.log(array);
 }
 array(); */
 
@@ -52,9 +52,9 @@ array(); */
 
 //- створити функцію яка повертає найбільше число з масиву
 
-   /* function max(array2) {
-        let max = array2[0];
-        for (const maxNum of array2) {
+   /* function max(array) {
+        let max = array[0];
+        for (const maxNum of array) {
             if (maxNum > max) max = maxNum;
         }
         return max;
@@ -67,9 +67,9 @@ array(); */
 //- створити функцію яка повертає найменьше число з масиву
 
 
-    /* function min(array3) {
-        let min = array3[0];
-        for (const minNum of array3) {
+    /* function min(array) {
+        let min = array[0];
+        for (const minNum of array) {
             if (minNum < max) min = minNum;
         }
         return min;
@@ -124,7 +124,12 @@ array(); */
     console.log(random(33,100)); */
 
 
-let array6 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+
+/* - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
+ EXAMPLE: [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ] */
+
+
+/*let array6 = [{name: 'Dima', age: 13}, {model: 'Camry'}];
 let array7 =[];
 for (let j = 0; j < array6.length; j++) {
     const array6Element = array6[j];
@@ -135,26 +140,19 @@ for (const array6ElementKey in array6Element) {
 console.log(array7);
 
 
-/* - Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
- EXAMPLE: [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ] */
-
-function array(){
-    let arrayNew =[];
-    for (let j = 0; j < array.length; j++) {
-        const arrayElement = array[j];
-        for (const arrayElementKey in arrayElement) {
-            arrayNew.push(arrayElementKey)  ;
-        }
-    }
-    console.log(arrayNew);
-}
-array([{name: 'Dima', age: 13}, {model: 'Camry'}]);
-
-
 
 /*- Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 EXAMPLE: [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ] */
 
-let array8 = [{name: 'Dima', age: 13}, {model: 'Camry'}]
+
+/*let arrayNew = [];
+let array = [{name: 'Dima', age: 13}, {model: 'Camry'}]
+for (let i = 0; i < array.length; i++) {
+    const arr = array[i];
+    for (const arrKey in arr) {
+        arrayNew.push(arr[arrKey])
+    }
+}
+console.log(arrayNew); */
 
 
